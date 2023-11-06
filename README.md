@@ -15,3 +15,7 @@ Visit https://eslint.org/ and https://prettier.io/ for details.
 
 The project uses both Jest and Cypress for unit and end-to-end testing. To execute tests `npm test`.
 For more details visit https://jestjs.io/ and https://www.cypress.io/.
+
+## Workflow status badges
+
+[![pages-build-deployment](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment)
