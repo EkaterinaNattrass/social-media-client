@@ -23,4 +23,4 @@ For more details visit https://jestjs.io/ and https://www.cypress.io/.
 
 [![pages-build-deployment](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment)
 
-[![pages-build-deployment](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/Automated-unit-tests)
+[![automated-unit-testing](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/Automated-Unit-Testing)
