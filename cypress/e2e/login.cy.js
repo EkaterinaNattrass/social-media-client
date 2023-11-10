@@ -13,6 +13,7 @@ describe('login', () => {
    cy.get('#loginPassword').type(validPassword);
    cy.get('button[type=submit]').contains('Login').click();
   });
+
   it('denies login and access if the email is invalid', () => {
     cy.get('#loginModal').contains("Login").click();
     cy.get('#loginEmail').type(invalidEmail);
@@ -20,6 +21,7 @@ describe('login', () => {
     cy.get('button[type=submit]').contains('Login').click();
     cy.get('#loginPassword:invalid').should('be.visible');
   });
+
   it('denies login and access if the password is invalid', () => {
     cy.get('#loginModal').contains("Login").click();
     cy.get('#loginEmail').type(validEmail);
@@ -27,6 +29,7 @@ describe('login', () => {
     cy.get('button[type=submit]').contains('Login').click();
     cy.get('#loginEmail:invalid').should('be.visible');
   });
+
   it('denies login and access if the email and password are invalid', () => {
     cy.get('#loginModal').contains("Login").click();
     cy.get('#loginEmail').type(invalidEmail);
