@@ -23,7 +23,7 @@ For more details visit https://jestjs.io/ and https://www.cypress.io/.
 
 [![pages-build-deployment](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment)
 
-[![automated-unit-testing](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/pages/pages-build-deployment)
+[![automated-unit-testing](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/main.yml/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/main.yml/badge.svg)
 
 ![automated-unit-testing]
 (https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/main.yml/badge.svg)
