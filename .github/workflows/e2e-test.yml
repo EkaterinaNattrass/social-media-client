@@ -1,5 +1,5 @@
 name: e2e-test
-on: 
+on:
   pull_request:
   workflow_dispatch:
 
@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout under $GITHUB_WORKSPACE
         uses: actions/checkout@main
-
+  
       - name: Set up NodeJS
         uses: actions/setup-node@v1
         with:
@@ -22,5 +22,3 @@ jobs:
 
       - name: Cypress run
         run: npm run test-e2e
-
-      

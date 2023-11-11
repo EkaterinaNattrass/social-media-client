@@ -4,8 +4,8 @@ import 'jest-localstorage-mock';
 global.fetch = jest.fn(() =>
   Promise.resolve({
     ok: true,
-    json: () => Promise.resolve({ accessToken: "noroff123" })
-  })
+    json: () => Promise.resolve({ accessToken: 'noroff123' }),
+  }),
 );
 
 describe('login', () => {
@@ -14,25 +14,13 @@ describe('login', () => {
   });
 
   it('stores the token in browser storage', async () => {
-
-    const email = "noroff@example.com";
-    const password = "noroffPassword";
+    const email = 'noroff@example.com';
+    const password = 'noroffPassword';
 
     await login(email, password);
 
-    const token = JSON.parse(localStorage.getItem("token"));
+    const token = JSON.parse(localStorage.getItem('token'));
 
-    expect(token).toBe("noroff123");
+    expect(token).toBe('noroff123');
   });
 });
-
-
-
-
-
-
-
-
-
-
-

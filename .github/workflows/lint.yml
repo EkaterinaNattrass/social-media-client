@@ -1,12 +1,12 @@
 name: lint
-on: 
+on:
   pull_request:
   workflow_dispatch:
 
 jobs:
-  lint: 
+  lint:
     runs-on: ubuntu-latest
-  
+
     steps:
       - name: Checkout under $GITHUB_WORKSPACE
         uses: actions/checkout@main
@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Run prettier
-        run: npm run format
-      
+        run: npm run format:check
+
       - name: Run eslint
-        run: npm run lint-all
+        run: npm run lint-all:check

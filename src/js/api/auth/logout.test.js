@@ -5,13 +5,13 @@ import 'jest-localstorage-mock';
 
 jest.mock('../../storage/index.js', () => {
   return {
-    remove: jest.fn()
+    remove: jest.fn(),
   };
 });
 
 describe('logout', () => {
   it('clears token from browser storage', () => {
     logout();
-    expect(remove).toHaveBeenCalledWith('token')
-}); 
-})
+    expect(remove).toHaveBeenCalledWith('token');
+  });
+});

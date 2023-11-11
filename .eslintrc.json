@@ -11,27 +11,18 @@
   "ignorePatterns": ["!lib/", "node_modules/"],
   "overrides": [
     {
-        "files": [
-            "src/**/*.test.js",
-            "**/*.cy.js"
-        ],
-        "env": {
-            "node": true,
-            "jest": true,
-            "cypress/globals": true
-        },
-        "plugins": [
-            "jest",
-            "cypress"
-        ],
-        "extends": [
-            "plugin:jest/recommended",
-            "plugin:cypress/recommended"
-        ],
-        "rules": {
-            "jest/prefer-expect-assertions": "off",
-            "no-unused-vars": "off"
-        }
+      "files": ["src/**/*.test.js", "**/*.cy.js"],
+      "env": {
+        "node": true,
+        "jest": true,
+        "cypress/globals": true
+      },
+      "plugins": ["jest", "cypress"],
+      "extends": ["plugin:jest/recommended", "plugin:cypress/recommended"],
+      "rules": {
+        "jest/prefer-expect-assertions": "off",
+        "no-unused-vars": "off"
+      }
     }
-]
+  ]
 }
