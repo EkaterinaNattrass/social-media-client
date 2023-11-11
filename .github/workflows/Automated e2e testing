@@ -6,14 +6,18 @@ jobs:
   run-e2e-tests:
     name: Run E2E Tests
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout under $GITHUB_WORKSPACE
         uses: actions/checkout@main
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
+      - name: Set up NodeJS
+        uses: actions/setup-node@v1
 
-       with:
-          build: npm run build
-          start: npm start
+      - name: Install all dependencies
+        run: npm install
+
+      - name: Cypress run
+        uses: npm run test-e2e
+
      

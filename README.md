@@ -25,5 +25,8 @@ For more details visit https://jestjs.io/ and https://www.cypress.io/.
 
 [![automated-unit-testing](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/main.yml/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/main.yml)
 
-![automated-unit-testing]
-(https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/main.yml/badge.svg)
+[![automated-unit-testing](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/main.yml/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/main.yml)
+
+[![code-review](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/gpt.yml/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/gpt.yml)
+
+[![code-review](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/gpt.yml/badge.svg)](https://github.com/EkaterinaNattrass/social-media-client/actions/workflows/gpt.yml)

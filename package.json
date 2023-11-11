@@ -12,7 +12,7 @@
     "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
     "lint-all": "eslint . --fix",
     "test": "jest --config=jest.config.json",
-    "test-e2e": "cypress open",
+    "test-e2e": "npx cypress run",
     "test-e2e-cli": "cypress run"
   },
   "husky": {
