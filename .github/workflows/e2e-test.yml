@@ -1,7 +1,7 @@
 name: e2e-test
 on: 
   pull_request:
-  # workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   run-e2e-tests:
@@ -16,7 +16,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '20.x'
-
 
       - name: Install all dependencies
         run: npm install
