@@ -10,7 +10,7 @@
     "format": "prettier --write . ",
     "prepare": "husky install",
     "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
-    "lint-all": "eslint . --fix",
+    "lint-all": "eslint ./src --fix",
     "test": "jest --config=jest.config.json",
     "test-e2e": "npx cypress run",
     "test-e2e-cli": "cypress run"
