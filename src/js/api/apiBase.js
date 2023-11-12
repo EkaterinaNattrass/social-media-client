@@ -1,2 +1,2 @@
-export const apiBase = 'https://whatver.com/api/possdsdsts';
+export const apiBase = 'https://whatever.com/api/posts';
 export const url = new URL(apiBase);
