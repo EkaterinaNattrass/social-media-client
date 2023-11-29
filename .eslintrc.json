@@ -8,19 +8,29 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "ignorePatterns": ["!lib/", "node_modules/"],
+  "ignorePatterns": "node_modules/",
   "overrides": [
     {
-      "files": ["src/**/*.test.js", "**/*.cy.js"],
+      "files": "src/**/*.test.js",
       "env": {
         "node": true,
-        "jest": true,
+        "jest": true
+      },
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+      "rules": {
+        "jest/prefer-expect-assertions": "off"
+      }
+    },
+    {
+      "files": "**/*.cy.js",
+      "env": {
+        "node": true,
         "cypress/globals": true
       },
-      "plugins": ["jest", "cypress"],
-      "extends": ["plugin:jest/recommended", "plugin:cypress/recommended"],
+      "plugins": ["cypress"],
+      "extends": ["plugin:cypress/recommended"],
       "rules": {
-        "jest/prefer-expect-assertions": "off",
         "no-unused-vars": "off"
       }
     }
