@@ -1,0 +1,6 @@
+{
+  "testMatch": ["<rootDir>/src/**/?(*.)+(spec|test).[jt]s?(x)"],
+  "setupFiles": ["jest-localstorage-mock"],
+  "resetMocks": false,
+  "setupFilesAfterEnv": ["jest-localstorage-mock"]
+}

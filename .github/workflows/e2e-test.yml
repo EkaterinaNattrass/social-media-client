@@ -1,0 +1,24 @@
+name: e2e-test
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  run-e2e-tests:
+    name: Run E2E Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout under $GITHUB_WORKSPACE
+        uses: actions/checkout@main
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: '20.x'
+
+      - name: Install all dependencies
+        run: npm install
+
+      - name: Cypress run
+        run: npm run test-e2e
