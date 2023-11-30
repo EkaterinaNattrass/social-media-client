@@ -2,7 +2,7 @@ const validEmail = 'pineapple@noroff.no';
 const validPassword = '12345678';
 
 describe('logout', () => {
-  it('allows the user to logout with the logout button'),
+  it('allows the user to logout with the logout button',
     () => {
       cy.visit('/');
       cy.get('header').within(() => {
@@ -16,12 +16,12 @@ describe('logout', () => {
       cy.get('.profile-posts').should('be.visible');
       cy.get('header').within(() => {
         cy.get('.text-end').within(() => {
-          cy.get('button.btn.btn-warning').click();
+          cy.get('button.btn.btn-outline-warning').click();
         });
       });
-      cy.get('.profile-posts').should('not.be.visible');
+      cy.get('.profile-posts').should('not.exist');
       cy.clearCookies();
       cy.clearLocalStorage();
       cy.visit('/');
-    };
+  });
 });
